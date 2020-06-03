@@ -120,19 +120,16 @@ extension FAPanelController: UIGestureRecognizerDelegate {
     
     internal func handleTapViewOpacityFromLeftPanelContainer() {
         
-        print(abs((leftPanelContainer.frame.origin.x+leftPanelContainer.frame.width)/leftPanelContainer.frame.width))
         tapView?.alpha = abs((leftPanelContainer.frame.origin.x+leftPanelContainer.frame.width)/leftPanelContainer.frame.width)
     }
     
     internal func handleTapViewOpacityFromRightPanelContainer() {
         
-        print(abs((centerPanelContainer.frame.width - rightPanelContainer.frame.origin.x)/rightPanelContainer.frame.width))
         tapView?.alpha = abs((centerPanelContainer.frame.width - rightPanelContainer.frame.origin.x)/rightPanelContainer.frame.width)
     }
     
     internal func handleTapViewOpacityFromCenterPanelContainer() {
         
-        print(abs(centerPanelContainer.frame.origin.x/centerPanelContainer.frame.width))
         tapView?.alpha = abs(centerPanelContainer.frame.origin.x/centerPanelContainer.frame.width)
     }
     
